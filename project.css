@@ -1,0 +1,493 @@
+/* ================ Projects Section ================= */
+#projects-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 32px 32px;
+    background: #232323;
+}
+
+#description-projects {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.projects {
+    color: #ffffff;
+}
+
+.work {
+    color: #00ffff;
+    margin-left: 0.3em;
+}
+
+/* ================ Project Category Section ================= */
+.project-category-section {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 80px;
+}
+
+.project-category-section:last-child {
+    margin-bottom: 0;
+}
+
+.category-title {
+    font-family: 'Space Grotesk', monospace;
+    font-size: 20px;
+    font-weight: 700;
+    color: #00ffff;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 40px;
+    padding-left: 5px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #00ffff;
+    display: inline-block;
+}
+
+/* ================ Projects Grid ================= */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+/* ================ Project Cards ================= */
+.project-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #00ffff;
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #2a2a2a;
+    position: relative;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-content {
+    padding: 30px;
+}
+
+.project-content h3 {
+    font-family: 'Orbitron', monospace;
+    font-size: 24px;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 12px;
+    letter-spacing: 0.08em;
+}
+
+.project-tech {
+    font-size: 14px;
+    color: #00ffff;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+}
+
+/* ================ Button View Project ================= */
+.btn-view-project {
+    background: transparent;
+    border: 2px solid #00ffff;
+    color: #00ffff;
+    padding: 12px 28px;
+    cursor: pointer;
+    font-family: 'Space Grotesk', monospace;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-view-project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00ffff;
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.btn-view-project:hover {
+    color: #000000;
+}
+
+.btn-view-project:hover::before {
+    width: 100%;
+}
+
+/* ================ Popup ================= */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-content {
+    background: #1a1a1a;
+    border: 2px solid #00ffff;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.popup-overlay.active .popup-content {
+    transform: scale(1);
+}
+
+.popup-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: #00ffff;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-close:hover {
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+
+.popup-body {
+    padding: 40px;
+}
+
+.popup-body h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 32px;
+    font-weight: 900;
+    color: #00ffff;
+    margin-bottom: 20px;
+    letter-spacing: 0.08em;
+}
+
+.popup-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    background: #2a2a2a;
+}
+
+.popup-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popup-body p {
+    font-size: 16px;
+    color: #a0a0a0;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    letter-spacing: 0.05em;
+}
+
+.popup-tech {
+    margin-bottom: 30px;
+}
+
+.popup-tech h4 {
+    font-family: 'Space Grotesk', monospace;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: 0.08em;
+}
+
+.popup-tech p {
+    color: #00ffff;
+    font-size: 16px;
+}
+
+.popup-links {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-popup-link {
+    background: #00ffff;
+    border: 2px solid #00ffff;
+    color: #000000;
+    padding: 14px 32px;
+    cursor: pointer;
+    font-family: 'Space Grotesk', monospace;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-popup-link:hover {
+    background: #00cccc;
+    border-color: #00cccc;
+    transform: translateY(-2px);
+}
+
+.btn-popup-link.secondary {
+    background: transparent;
+    color: #00ffff;
+}
+
+.btn-popup-link.secondary:hover {
+    background: #00ffff;
+    color: #000000;
+}
+
+/* ================ Responsive ================= */
+@media (max-width: 1024px) {
+  #description-projects {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .project-category-section {
+    margin-bottom: 60px;
+  }
+  
+  .category-title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .projects-grid {
+    gap: 32px;
+  }
+  
+  .project-image {
+    height: 220px;
+  }
+  
+  .popup-body h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  #projects-section {
+    padding: 60px 24px 24px;
+  }
+  
+  #description-projects {
+    font-size: 32px;
+    margin-bottom: 40px;
+    letter-spacing: 0.1em;
+  }
+  
+  .project-category-section {
+    margin-bottom: 50px;
+  }
+  
+  .category-title {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .project-image {
+    height: 200px;
+  }
+  
+  .project-content {
+    padding: 24px;
+  }
+  
+  .project-content h3 {
+    font-size: 20px;
+  }
+  
+  .popup-content {
+    width: 95%;
+  }
+  
+  .popup-body {
+    padding: 30px 20px;
+  }
+  
+  .popup-body h2 {
+    font-size: 24px;
+  }
+  
+  .popup-image {
+    height: 250px;
+  }
+  
+  .popup-links {
+    flex-direction: column;
+  }
+  
+  .btn-popup-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #projects-section {
+    padding: 40px 16px 16px;
+  }
+  
+  #description-projects {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  
+  .project-category-section {
+    margin-bottom: 40px;
+  }
+  
+  .category-title {
+    font-size: 14px;
+    margin-bottom: 20px;
+    letter-spacing: 0.15em;
+  }
+  
+  .projects-grid {
+    gap: 24px;
+  }
+  
+  .project-image {
+    height: 180px;
+  }
+  
+  .project-content {
+    padding: 20px;
+  }
+  
+  .project-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .project-tech {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  
+  .btn-view-project {
+    padding: 10px 24px;
+    font-size: 13px;
+    width: 100%;
+  }
+  
+  .popup-close {
+    top: 15px;
+    right: 15px;
+    font-size: 32px;
+  }
+  
+  .popup-body {
+    padding: 24px 16px;
+  }
+  
+  .popup-body h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .popup-image {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .popup-body p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .popup-tech {
+    margin-bottom: 24px;
+  }
+  
+  .popup-tech h4 {
+    font-size: 16px;
+  }
+  
+  .popup-tech p {
+    font-size: 14px;
+  }
+  
+  .popup-links {
+    gap: 12px;
+  }
+  
+  .btn-popup-link {
+    padding: 12px 24px;
+    font-size: 13px;
+  }
+}

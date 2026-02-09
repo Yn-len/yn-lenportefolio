@@ -1,0 +1,178 @@
+/* ================ Contact Section ================= */
+#contact-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 32px 32px;
+    background: #232323;
+}
+
+#description-contact {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.get {
+    color: #ffffff;
+}
+
+.in-touch {
+    color: #00ffff;
+    margin-left: 0.3em;
+}
+
+/* ================ Contact Container ================= */
+.contact-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ================ Contact Card ================= */
+.contact-card {
+    background: #1a1a1a;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 30px 40px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.contact-card:hover {
+    border-color: #00ffff;
+    transform: translateX(10px);
+}
+
+.contact-icon {
+    font-size: 32px;
+    color: #00ffff;
+    min-width: 50px;
+    text-align: center;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-family: 'Orbitron', monospace;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 8px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #a0a0a0;
+    letter-spacing: 0.05em;
+}
+
+.contact-card a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card:hover a {
+    color: #00cccc;
+}
+
+@media (max-width: 1024px) {
+  #description-contact {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .contact-container {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact-section {
+    padding: 60px 24px 24px;
+  }
+  
+  #description-contact {
+    font-size: 32px;
+    margin-bottom: 40px;
+    letter-spacing: 0.1em;
+  }
+  
+  .contact-container {
+    max-width: 100%;
+    gap: 24px;
+  }
+  
+  .contact-card {
+    padding: 24px 30px;
+    gap: 20px;
+  }
+  
+  .contact-icon {
+    font-size: 28px;
+    min-width: 45px;
+  }
+  
+  .contact-info h3 {
+    font-size: 18px;
+  }
+  
+  .contact-info p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact-section {
+    padding: 40px 16px 16px;
+  }
+  
+  #description-contact {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  
+  .contact-container {
+    gap: 20px;
+  }
+  
+  .contact-card {
+    padding: 20px 24px;
+    gap: 16px;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .contact-card:hover {
+    transform: translateX(0) translateY(-5px);
+  }
+  
+  .contact-icon {
+    font-size: 26px;
+    min-width: auto;
+  }
+  
+  .contact-info h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  
+  .contact-info p {
+    font-size: 14px;
+  }
+}

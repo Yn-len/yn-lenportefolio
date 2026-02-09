@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    
+    <!--INTRO-->
+    <div id="intro">
+
+        <div class="intro-text">
+            <span class="line" data-text="NATHAN">NATHAN</span>
+            <span class="subtitle">DÉVELOPPEUR WEB</span>
+        </div>
+
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <header>
+        <span class="logo">ND</span>
+
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <li>
+                <button class="active">Accueil</button>
+                <button>À propos</button>
+                <button>Projets</button>
+                <button>Compétences</button>
+                <button>Contact</button>
+            </li>
+        </nav>
+    </header>
+    
+    <!--SITE-->
+    <section>
+
+        <div id="site">
+            <div id="left">
+                <h2>Bonjour, C'est Moi</h2>
+                <div>
+                    <h1>NATHAN DELAHAYE</h1>
+                    <span class="intro-label">Je suis</span>
+                    <span class="job-title">Développeur Web</span>
+                </div>
+
+                <p class="description">Je crée des projets techniques ambitieux, du web aux systèmes, en cherchant toujours à aller plus loin.</p>
+                <div class="cta-buttons">
+                    <a href="CV-Nathan Delahaye.pdf" download="CV-Delahaye-Nathan.pdf" class="btn-primary">Télécharger mon CV</a>
+                    <button class="btn-contact">Contact</button>
+                </div>
+            </div>
+
+            <div id="right">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.51/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/zUG6CTMODH0XM4-d/scene.splinecode"></spline-viewer>
+            </div>
+        </div>
+
+    </section>
+    
+    <!--ABOUT-->
+    <section>
+        
+        <div id="about-section">
+            <div id="description-about">
+                <span class="about">À propos de</span><span class="me">Moi</span>
+            </div>
+            
+            <div id="about-content">
+                <div id="about-left">
+                    <h3>Qui je suis</h3>
+                    <p>Je suis passionné par le développement logiciel et la conception d'interfaces depuis plusieurs années. J'aime créer des projets complets, de la conception d'interface à la programmation bas niveau, en cherchant toujours à comprendre en profondeur le fonctionnement des systèmes. Je suis particulièrement intéressé par les projets qui allient réflexion technique, expérience utilisateur et résolution de problèmes concrets.</p>
+                    <p>Curieux et autonome, j'aime apprendre de nouvelles technologies, expérimenter, puis améliorer mon travail pour le rendre plus cohérent, efficace et utile.</p>
+                </div>
+                <div id="about-right">
+                    <img src="portfolio.png"  class="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!--PROJECTS-->
+    <section>
+
+        <div id="projects-section">
+            <div id="description-projects">
+                <span class="projects">Mes</span><span class="work">Projets</span>
+            </div>
+            
+            <!-- Web Development Projects -->
+            <div class="project-category-section">
+                <h3 class="category-title">Développement Web</h3>
+                <div class="projects-grid">
+                    <div class="project-card" data-project="1">
+                        <div class="project-image">
+                            <img src="LevelUpCali.png" alt="Project 1">
+                        </div>
+                        <div class="project-content">
+                            <h3>Application de Fitness</h3>
+                            <p class="project-tech">Html | Css | Javascript | Python</p>
+                            <button class="btn-view-project" data-project="1">Voir Détails</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="2">
+                        <div class="project-image">
+                            <img src="ASA.png" alt="Project 2">
+                        </div>
+                        <div class="project-content">
+                            <h3>Application de Santé (en cours)</h3>
+                            <p class="project-tech">Html | Css | Javascript | Leaflet.js | Node.js | Sql</p>
+                            <button class="btn-view-project" data-project="2">Voir Détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Low-Level Projects -->
+            <div class="project-category-section">
+                <h3 class="category-title">Projets Bas Niveau</h3>
+                <div class="projects-grid">
+                    <div class="project-card" data-project="3">
+                        <div class="project-image">
+                            <img src="NPL.png" alt="Project 3">
+                        </div>
+                        <div class="project-content">
+                            <h3>Langage de Programmation (en cours (90% terminé))</h3>
+                            <p class="project-tech">C</p>
+                            <button class="btn-view-project" data-project="3">Voir Détails</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="4">
+                        <div class="project-image">
+                            <img src="OS.png" alt="Project 4">
+                        </div>
+                        <div class="project-content">
+                            <h3>Système d'Exploitation (objectif ultime)</h3>
+                            <p class="project-tech">C | Assembly</p>
+                            <button class="btn-view-project" data-project="4">Voir Détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- POPUP -->
+    <div id="project-popup" class="popup-overlay">
+
+        <div class="popup-content">
+            <button class="popup-close">&times;</button>
+            <div class="popup-body">
+                <h2 id="popup-title"></h2>
+                <div class="popup-image">
+                    <img id="popup-img" src="" alt="Project">
+                </div>
+
+                <p id="popup-description"></p>
+
+                <div class="popup-tech">
+                    <h4>Technologies :</h4>
+                    <p id="popup-tech-list"></p>
+                </div>
+
+                <div class="popup-links">
+                    <a href="#" class="btn-popup-link">Démo Live</a>
+                    <a href="#" class="btn-popup-link secondary">GitHub</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--SKILLS-->
+    <section>
+
+        <div id="skills-section">
+            <div id="description-skills">
+                <span class="my">Mes</span><span class="skills">Compétences</span>
+            </div>
+        
+        <div class="skills-grid">
+            <!-- C -->
+            <div class="skill-card">
+                <div class="skill-content">
+                    <h3>C</h3>
+                    <p>Programmation bas niveau, gestion de la mémoire et développement système</p>
+                </div>
+            </div>
+
+            <!-- HTML -->
+            <div class="skill-card">
+                <div class="skill-content">
+                    <h3>HTML</h3>
+                    <p>Balisage et structure web moderne</p>
+                </div>
+            </div>
+
+            <!-- CSS -->
+            <div class="skill-card">
+                <div class="skill-content">
+                    <h3>CSS</h3>
+                    <p>Design responsive, animations et mises en pages modernes</p>
+                </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-card">
+                <div class="skill-content">
+                    <h3>JavaScript</h3>
+                    <p>Applications web interactives et fonctionnalités dynamiques</p>
+                </div>
+            </div>
+
+            <!-- Three.js -->
+            <div class="skill-card">
+                <div class="skill-content">
+                    <h3>Three.js</h3>
+                    <p>Graphiques 3D et expériences web immersives</p>
+                </div>
+            </div>
+
+            <!-- Blender -->
+            <div class="skill-card">
+                <div class="skill-content">
+                    <h3>Blender</h3>
+                    <p>Création de modèles 3D et animations</p>
+                </div>
+            </div>
+
+
+            <!-- Node.js -->
+            <div class="skill-card">
+                <div class="skill-content">
+                    <h3>Node.js</h3>
+                    <p>JavaScript côté backend et animations web</p>
+                </div>
+            </div>
+
+            <!-- SQL -->
+            <div class="skill-card">
+                <div class="skill-content">
+                    <h3>SQL</h3>
+                    <p>Conception et gestion de bases de données</p>
+                </div>
+            </div>
+
+            <!-- Spline -->
+            <div class="skill-card">
+                <div class="skill-content">
+                    <h3>Spline</h3>
+                    <p>Design 3D</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+    <!--CONTACT-->
+    <section>
+        <div id="contact-section">
+
+            <div id="description-contact">
+                <span class="get">Me</span><span class="in-touch">Contacter</span>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-card">
+
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p><a href="mailto:nathan.delahaye008@gmail.com">nathan.delahaye08@gmail.com</a></p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="contact-info">
+                        <h3>GitHub</h3>
+                        <p><a href="https://github.com/nathanWorkout/" target="_blank">github.com/nathanWorkout</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
