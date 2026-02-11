@@ -5,8 +5,9 @@
 }
 body {
     margin: 0;
-    background: #88CCF1;
-    color: #ffffff;
+    padding: 0;
+    background:linear-gradient(135deg,#0f2027, #203a43, #2c5364);
+    color: white;
     font-family: 'Space Grotesk', monospace;
     overflow-x: hidden;
 }
