@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     padding: 80px 32px 32px;
-    background: #232323;
+    background: linear-gradient(135deg, #243949, #517fa4);
 }
 
 #description-skills {
