@@ -5,7 +5,7 @@
 }
 body {
     margin: 0;
-    background: #232323;
+    background: #88CCF1;
     color: #ffffff;
     font-family: 'Space Grotesk', monospace;
     overflow-x: hidden;
@@ -21,7 +21,7 @@ body {
     z-index: 1000;
     flex-direction: column;
     overflow: hidden;
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition: opacity 0.10s ease, transform 0.10s ease;
 }
 #intro.fade-out {
     opacity: 0;
