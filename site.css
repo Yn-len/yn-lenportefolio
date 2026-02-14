@@ -5,9 +5,7 @@
     justify-content: center;
     align-items: center;
     padding: 32px;
-    body,
-html {
-    background-color: #f5f5dc !important;
+    background: #0f172a;
     gap: 32px;
 }
 
