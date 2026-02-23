@@ -145,3 +145,14 @@
     max-width: 100%;
   }
 }
+/* Style pour l'image dans la section À propos */
+.about-image {
+    width: 100%;           /* L'image s'adapte à la largeur du bloc */
+    max-width: 350px;      /* Pour éviter qu'elle soit trop immense */
+    display: block;        /* Permet de mieux gérer les marges */
+    margin: 20px auto;     /* Centre l'image si besoin */
+    border-radius: 12px;   /* Arrondit les angles */
+    border: 2px solid #00ffcc; /* Un contour couleur "Cyber" */
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.3); /* Un léger effet brillant */
+    object-fit: cover;     /* Garde les proportions de l'image sans l'écraser */
+}
