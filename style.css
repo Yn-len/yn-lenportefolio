@@ -5,9 +5,8 @@
 }
 body {
     margin: 0;
-    padding: 0;
-    background:#7c5eb3;
-    color: white;
+    background: #7c5eb3;
+    color: #ffffff;
     font-family: 'Space Grotesk', monospace;
     overflow-x: hidden;
 }
@@ -15,14 +14,14 @@ body {
 #intro {
     position: fixed;
     inset: 0;
-    background:#7c5eb3;
+    background: #7c5eb3;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
     flex-direction: column;
     overflow: hidden;
-    transition: opacity 0.10s ease, transform 0.10s ease;
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 #intro.fade-out {
     opacity: 0;
