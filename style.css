@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    background:#7c5eb3;
+    background:##6798bf;
     color: white;
     font-family: 'Space Grotesk', monospace;
     overflow-x: hidden;
@@ -15,7 +15,7 @@ body {
 #intro {
     position: fixed;
     inset: 0;
-    background:#7c5eb3;
+    background:##6798bf;
     display: flex;
     justify-content: center;
     align-items: center;
