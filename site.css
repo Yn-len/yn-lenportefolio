@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     padding: 32px;
-    background: ##6798bf;
+    background: #6798bf;
     gap: 32px;
 }
 
@@ -71,7 +71,7 @@ header nav button.active::after {
 header nav button:hover,
 header nav button.active {
     border-color: rgba(0, 255, 255, 0.4);
-    color: ##835DD0;
+    color: #835DD0;
 }
 
 /* ================ Left Texte ================= */
@@ -209,7 +209,7 @@ header nav button.active {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: ##6798bf;
+    background: #6798bf;
 }
 
 spline-viewer {
