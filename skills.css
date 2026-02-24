@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     padding: 80px 32px 32px;
-    background: ##6798bf;
+    background: #6798bf;
 }
 
 #description-skills {
@@ -38,8 +38,8 @@
 
 /* ================ Skill Card ================= */
 .skill-card {
-    background: ##7e959e;
-    border: 2px solid ##dfe3f7;
+    background: #7e959e;
+    border: 2px solid #dfe3f7;
     border-radius: 12px;
     padding: 20px 16px;
     display: flex;
